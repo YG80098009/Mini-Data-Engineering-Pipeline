@@ -2,5 +2,5 @@ __pycache__
 venv
 .env
 test
-core
-models
+app/server-a/core
+app/server-a/models

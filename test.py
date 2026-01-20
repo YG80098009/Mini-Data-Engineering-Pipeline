@@ -78,5 +78,5 @@ def ingest_weather_for_location(location_name):
     return records
 
 data = ingest_weather_for_location("London")
-limited_data = data[:3]
-limited_data
+limited_data = data[:1]
+print(limited_data)

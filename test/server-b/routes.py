@@ -11,4 +11,4 @@ def clean_endpoint(data):
 
     response = requests.post(URL_service_c, json=final_data)
 
-    return {"status": "sent", "response": response.status_code}
+    return {"status": "sent", "response": response}

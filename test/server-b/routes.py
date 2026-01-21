@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 from flask import request, jsonify
+=======
+from fastapi import r
+>>>>>>> service-b
 import requests
 from service import clean_and_transform
 from main import app  

@@ -8,7 +8,7 @@ def fetch_coordinates(location_name: str):
         "name": location_name,
         "count": 1
     }
-
+    
     response = requests.get(url, params=params)
     response.raise_for_status()
     data = response.json()
@@ -77,6 +77,6 @@ def ingest_weather_for_location(location_name):
 
     return records
 
-def send_data(data):
-    requests.post("localhost:8080" ,data)
-
+data = ingest_weather_for_location("London")
+limited_data = data[:1]
+print(limited_data)

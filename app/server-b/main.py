@@ -1,13 +1,7 @@
-from fastapi import APIRouter, FastAPI
+from fastapi import FastAPI
+from routes import router
 
 app = FastAPI()
-router = APIRouter()
-
-
-@router.get("/")
-async def root():
-    return {"hello": "world"}
-
 
 app.include_router(router)
 
